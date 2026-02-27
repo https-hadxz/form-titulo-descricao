@@ -82,7 +82,16 @@
   </div>
 
   <div id="" class="d-flex justify-content-center mt-5 gap-5">
+    <% for (item of lista) { %>
     <div class="card" style="width: 25rem; border-radius: 10%; height: 19rem;">
+      <img src="<%=item.imagem%>" class="card-img" alt="" style="height: 100%; border-radius: 10%;">
+      <div class="card-img-overlay d-flex align-items-center justify-content-center">
+        <h2 class="card-text text-white text-lg text-center"><%=item.titulo%></h2>
+      </div>
+      <%=item.descricao%>
+    </div>
+    <%}%>
+    <!--div class="card" style="width: 25rem; border-radius: 10%; height: 19rem;">
       <img src="../understanding-abstract-art.jpg" class="card-img" alt="" style="height: 100%; border-radius: 10%;">
       <div class="card-img-overlay d-flex align-items-center justify-content-center">
         <h2 class="card-text text-white text-lg text-center">Card Text</h2>
@@ -99,7 +108,7 @@
       <img src="../img.jpeg" class="card-img" alt="" style="height: 100%; border-radius: 10%;">
       <div class="card-img-overlay d-flex align-items-center justify-content-center">
         <h2 class="card-text text-white text-lg text-center">Card Text</h2>
-      </div>
+      </div-->
   </div>
 </body>
 
