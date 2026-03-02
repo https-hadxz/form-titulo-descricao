@@ -26,6 +26,15 @@ app.get('/titulo-descricao', (request, response) => {
     response.render('form')
 })
 
+app.get('/produto', (request, response) => {
+    response.render('produto')
+})
+
+app.get('/fotos', (request, response) => {
+    response.render('fotos')
+})
+
+
 
 app.post('/titulo-descricao', (request, response) => {
     let registro = { titulo: request.body.titulo, descricao: request.body.descricao, imagem: request.body.imagem }
